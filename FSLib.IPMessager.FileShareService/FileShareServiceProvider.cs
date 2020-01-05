@@ -10,17 +10,42 @@ namespace FSLib.IPMessager.FileShareService
 	/// 提供文件共享的功能
 	/// </summary>
 	[Service("木鱼", "fishcn@foxmail.com", "文件共享", "CopyRight2005-2010 木鱼", "提供局域网内部文件共享的支持")]
-	public class FileShareServiceProvider : FSLib.IPMessager.Services.ProviderBase<string>, FSLib.IPMessager.Services.IServiceProvider
+	public class FileShareServiceProvider : ProviderBase<string>, IPMessagerNet.API.ILogProvider, Services.IServiceProvider
 	{
-		private bool _enabled;
+		#region IServiceProvider Members
 
+		#region 捕捉事件
+
+		bool isEnabled = false;
+
+		#endregion
+
+		/// <summary>
+		/// 初始化设置
+		/// </summary>
+		/// <param name="client">初始化客户端</param>
+		public override void Initialize(IPMClient client)
+		{
+			base.Initialize(client);
+
+			isEnabled = true;
+		}
 
 		/// <summary>
 		/// 插件启动
 		/// </summary>
 		public void Startup()
 		{
-			_enabled = true;
+			isEnabled = true;
+		}
+
+		/// <summary>
+		/// 插件卸载
+		/// </summary>
+		public override void ShutDown()
+		{
+			base.ShutDown();
+			isEnabled = false;
 		}
 
 		/// <summary>
@@ -31,17 +56,6 @@ namespace FSLib.IPMessager.FileShareService
 		public override bool CheckCanLoad(bool isFirstCall)
 		{
 			return true;
-		}
-
-		/// <summary>
-		/// 初始化设置
-		/// </summary>
-		/// <param name="client">初始化客户端</param>
-		public override void Initialize(IPMClient client)
-		{
-			base.Initialize(client);
-
-			_enabled = true;
 		}
 
 		/// <summary>
@@ -100,15 +114,6 @@ namespace FSLib.IPMessager.FileShareService
 		}
 
 		/// <summary>
-		/// 插件卸载
-		/// </summary>
-		public override void ShutDown()
-		{
-			base.ShutDown();
-			_enabled = false;
-		}
-
-		/// <summary>
 		/// 默认提供当前插件的版本
 		/// </summary>
 		public override string Version
@@ -140,5 +145,21 @@ namespace FSLib.IPMessager.FileShareService
 				return null;
 			}
 		}
+
+		#endregion
+
+		#region ILogProvider Members
+
+		public void ShowLogViewer()
+		{
+
+		}
+
+		public void ShowLogConfig()
+		{
+
+		}
+
+		#endregion
 	}
 }

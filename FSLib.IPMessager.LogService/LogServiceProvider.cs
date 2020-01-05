@@ -9,7 +9,7 @@ namespace FSLib.IPMessager.LogService
 	/// 提供对飞鸽传书.net日志的支持
 	/// </summary>
 	[Service("木鱼", "fishcn@foxmail.com", "通信日志文本记录", "©Copyright2009,fishcn@fxomail.com", "提供基于文件系统的日志记录")]
-	public class LogServiceProvider : ProviderBase<LogServiceConfig>, IPMessagerNet.API.ILogProvider, FSLib.IPMessager.Services.IServiceProvider
+	public class LogServiceProvider : ProviderBase<LogServiceConfig>, IPMessagerNet.API.ILogProvider, Services.IServiceProvider
 	{
 		#region IServiceProvider Members
 

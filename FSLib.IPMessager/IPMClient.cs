@@ -321,6 +321,11 @@ namespace FSLib.IPMessager
 			return si == null ? ServiceState.NotInstalled : si.State;
 		}
 
+		public void HeartBeat()
+		{
+			Commander.SendHeartBeatMessage();
+		}
+
 		#endregion
 
 		#region 资源管理

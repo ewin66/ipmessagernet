@@ -102,7 +102,7 @@ namespace IPMessagerNet.UI.Controls.Chat.IEView
 				Env.ClientConfig.IPMClientConfig.NickName,
 				DateTime.Now.ToString(),
 				msg
-			};
+			    };
 				browser.Document.InvokeScript("messageSend", param);
 			}
 			else

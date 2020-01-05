@@ -13,7 +13,7 @@ namespace FSLib.IPMessager.Core
 	/// <summary>
 	/// 负责命令的解析等操作
 	/// </summary>
-	public class CommandExecutor : IDisposable
+	public partial class CommandExecutor : IDisposable
 	{
 		/// <summary>
 		/// 构造函数

@@ -49,9 +49,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\FSLib.IPMessager\FSLib.IPMessager.csproj">
+    <ProjectReference Include="..\FSLib.IPMessager\FSLib.IPMessager.csproj">
       <Project>{E86FEBC4-2100-44BB-8703-78DB3845E726}</Project>
       <Name>FSLib.IPMessager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPMessager.Net\IPMessager.Net.csproj">
+      <Project>{8fd4e19f-28b0-4eea-afaa-7b273e6ab5b9}</Project>
+      <Name>IPMessager.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

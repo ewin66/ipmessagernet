@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPMessager.Net", "IPMessager.Net\IPMessager.Net.csproj", "{8FD4E19F-28B0-4EEA-AFAA-7B273E6AB5B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Addin", "Addin", "{50796561-434E-4754-AE4A-B29B43D5081F}"
@@ -8,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSLib.IPMessager.LogService", "FSLib.IPMessager.LogService\FSLib.IPMessager.LogService.csproj", "{BF063FD2-070D-4CF0-A653-21B12045616F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSLib.IPMessager", "FSLib.IPMessager\FSLib.IPMessager.csproj", "{E86FEBC4-2100-44BB-8703-78DB3845E726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSLib.IPMessager.FileShareService", "FSLib.IPMessager.FileShareService\FSLib.IPMessager.FileShareService.csproj", "{D4745B46-D821-4627-AD11-E82D71ACE5AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,11 +31,19 @@ Global
 		{E86FEBC4-2100-44BB-8703-78DB3845E726}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E86FEBC4-2100-44BB-8703-78DB3845E726}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E86FEBC4-2100-44BB-8703-78DB3845E726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4745B46-D821-4627-AD11-E82D71ACE5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4745B46-D821-4627-AD11-E82D71ACE5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4745B46-D821-4627-AD11-E82D71ACE5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4745B46-D821-4627-AD11-E82D71ACE5AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BF063FD2-070D-4CF0-A653-21B12045616F} = {50796561-434E-4754-AE4A-B29B43D5081F}
+		{D4745B46-D821-4627-AD11-E82D71ACE5AA} = {50796561-434E-4754-AE4A-B29B43D5081F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B010396-C1A2-4F42-890C-F3C63EDC2BF2}
 	EndGlobalSection
 EndGlobal

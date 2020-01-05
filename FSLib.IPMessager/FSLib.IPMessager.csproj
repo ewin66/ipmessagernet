@@ -137,6 +137,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\CommandExecutor.AsyncFile.cs" />
     <None Include="Resources\config_security.png" />
   </ItemGroup>
   <ItemGroup>

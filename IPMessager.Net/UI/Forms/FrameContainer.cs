@@ -55,7 +55,6 @@ namespace IPMessagerNet.UI.Forms
 			};
 		}
 
-
 		#region 状态维护
 
 
@@ -338,5 +337,24 @@ namespace IPMessagerNet.UI.Forms
 		}
 
 		#endregion
+
+		private void timerHeartBeat_Tick(object sender, EventArgs e)
+		{
+			if (sender is Timer)
+			{
+				Timer senderTimer = sender as Timer;
+				senderTimer.Stop();
+				//广播一条信息
+				Env.IPMClient.HeartBeat();
+				if (true)
+				{
+					senderTimer.Start();
+				}
+			}
+			else
+			{
+
+			}
+		}
 	}
 }

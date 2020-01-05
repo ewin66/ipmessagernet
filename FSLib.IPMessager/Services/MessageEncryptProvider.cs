@@ -13,7 +13,7 @@ namespace FSLib.IPMessager.Services
 	/// 通信加密组件
 	/// </summary>
 	[FSLib.IPMessager.Services.Service("木鱼", "E-mail:fishcn@foxmail.com", "RSA加密插件", "©Copyright 2006-2009,木鱼", "提供加密功能。此插件启用后，将会对支持RSA 1024加密的主机间使用RSA加密会话，防止内容被嗅探或他人窃取。不支持加密的主机不会受到影响。")]
-	public class MessageEncryptProvider : ProviderBase, IServiceProvider
+	public class MessageEncryptProvider : ProviderBase, Services.IServiceProvider
 	{
 		/// <summary>
 		/// 构造新的对象实例

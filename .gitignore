@@ -3,3 +3,17 @@
 ################################################################################
 
 /.vs/IPMessager.NET/v16/Server/sqlite3/db.lock
+/.vs/IPMessager.NET/v16/Server/sqlite3/storage.ide
+/.vs/IPMessager.NET_VS2008/v16/Server/sqlite3/db.lock
+/.vs/IPMessager.NET_VS2008/v16/Server/sqlite3/storage.ide
+/.vs/IPMessager.NET_VS2008/v16/Server/sqlite3/storage.ide-shm
+/.vs/IPMessager.NET_VS2008/v16/Server/sqlite3/storage.ide-wal
+/FSLib.IPMessager/bin/Debug
+/FSLib.IPMessager/obj/Debug
+/FSLib.IPMessager.FileShareService/bin/Debug
+/FSLib.IPMessager.FileShareService/obj/Debug
+/FSLib.IPMessager.LogService/bin/Debug
+/FSLib.IPMessager.LogService/obj/Debug
+/IPMessager.Net/bin/Debug
+/IPMessager.Net/obj/Debug/TempPE
+/IPMessager.Net/obj/Debug
